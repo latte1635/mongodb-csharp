@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "HrLLpZha78bYDB+b3YWB1GdTAzy1BbfIhj5ztHNbOswZTrubLwdL10ORPcqUVog30/XQGMtA/hE2slzk0FiVrw==",
+  "success": true,
+  "projectFilePath": "/home/latte/code/csharp/mongo/teht1/teht1.csproj",
+  "expectedPackageFiles": [
+    "/home/latte/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/home/latte/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/home/latte/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.3/microsoft.aspnetcore.app.ref.3.1.3.nupkg.sha512",
+    "/home/latte/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.7/microsoft.netcore.app.host.linux-x64.3.1.7.nupkg.sha512"
+  ],
+  "logs": []
+}

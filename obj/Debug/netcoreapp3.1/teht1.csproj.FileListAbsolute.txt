@@ -1,0 +1,15 @@
+/home/latte/code/csharp/mongo/teht1/obj/Debug/netcoreapp3.1/teht1.csprojAssemblyReference.cache
+/home/latte/code/csharp/mongo/teht1/obj/Debug/netcoreapp3.1/teht1.AssemblyInfoInputs.cache
+/home/latte/code/csharp/mongo/teht1/obj/Debug/netcoreapp3.1/teht1.AssemblyInfo.cs
+/home/latte/code/csharp/mongo/teht1/obj/Debug/netcoreapp3.1/teht1.csproj.CoreCompileInputs.cache
+/home/latte/code/csharp/mongo/teht1/bin/Debug/netcoreapp3.1/teht1
+/home/latte/code/csharp/mongo/teht1/bin/Debug/netcoreapp3.1/teht1.deps.json
+/home/latte/code/csharp/mongo/teht1/bin/Debug/netcoreapp3.1/teht1.runtimeconfig.json
+/home/latte/code/csharp/mongo/teht1/bin/Debug/netcoreapp3.1/teht1.runtimeconfig.dev.json
+/home/latte/code/csharp/mongo/teht1/bin/Debug/netcoreapp3.1/teht1.dll
+/home/latte/code/csharp/mongo/teht1/bin/Debug/netcoreapp3.1/teht1.pdb
+/home/latte/code/csharp/mongo/teht1/obj/Debug/netcoreapp3.1/teht1.dll
+/home/latte/code/csharp/mongo/teht1/obj/Debug/netcoreapp3.1/teht1.pdb
+/home/latte/code/csharp/mongo/teht1/obj/Debug/netcoreapp3.1/teht1.genruntimeconfig.cache
+/home/latte/code/csharp/mongo/teht1/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/home/latte/code/csharp/mongo/teht1/obj/Debug/netcoreapp3.1/teht1.csproj.CopyComplete
