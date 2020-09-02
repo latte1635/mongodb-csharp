@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/latte/code/csharp/mongo/teht2/teht2.csproj": {}
+    "/home/latte/code/csharp/mongo/toGit/teht2/teht2.csproj": {}
   },
   "projects": {
-    "/home/latte/code/csharp/mongo/teht2/teht2.csproj": {
+    "/home/latte/code/csharp/mongo/toGit/teht2/teht2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/latte/code/csharp/mongo/teht2/teht2.csproj",
+        "projectUniqueName": "/home/latte/code/csharp/mongo/toGit/teht2/teht2.csproj",
         "projectName": "teht2",
-        "projectPath": "/home/latte/code/csharp/mongo/teht2/teht2.csproj",
+        "projectPath": "/home/latte/code/csharp/mongo/toGit/teht2/teht2.csproj",
         "packagesPath": "/home/latte/.nuget/packages/",
-        "outputPath": "/home/latte/code/csharp/mongo/teht2/obj/",
+        "outputPath": "/home/latte/code/csharp/mongo/toGit/teht2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/latte/.nuget/NuGet/NuGet.Config"

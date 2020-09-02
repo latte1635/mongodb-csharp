@@ -48,9 +48,24 @@ namespace teht2
             Console.WriteLine(player.FirstItem().Name);
             Console.WriteLine(player.FirstItemWithLinq().Name);
 
-            PrintItemDel printItem = PrintItem;
-
             Player.ProcessEachItem(player, PrintItem);
+
+            Player.ProcessEachItem(player, (Item item) =>
+            {
+                Console.WriteLine("Id: " + item.Id + "\nLevel: " + item.Level);
+            });
+
+
+
+            List<PlayerFromAnotherGame> playersFromAnotherGame = PlayerFromAnotherGame.InstantiatePlayers();
+
+            Game<Player> thisGame = new Game<Player>(players);
+            Game<PlayerFromAnotherGame> thatGame = new Game<PlayerFromAnotherGame>(playersFromAnotherGame);
+
+            Console.WriteLine("Top scores from this game: ");
+            Console.WriteLine(string.Join(", ", thisGame.GetTop10Players().Select<Player, int>(p => p.Score)));
+            Console.WriteLine("Top scores from that game: ");
+            Console.WriteLine(string.Join(", ", thatGame.GetTop10Players().Select<PlayerFromAnotherGame, int>(p => p.Score)));
         }
     }
 }

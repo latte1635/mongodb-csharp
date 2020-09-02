@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sUZv066yAAn0HVmlIrndX1GULdliXXfyU/68byt60ZXp0cSqi9ayyICjcNzeB3HR50KnHwyM7dSMwSTzGPjKbg==",
+  "dgSpecHash": "kS/Tzw2EkE8ObaB7bbiK0rc1uU/6nILQUcZ+ZUbA1w5V6t6uxX0fMNasbMCFDqKDlGCnmKXELbo+ZqidVklh6g==",
   "success": true,
-  "projectFilePath": "/home/latte/code/csharp/mongo/teht2/teht2.csproj",
+  "projectFilePath": "/home/latte/code/csharp/mongo/toGit/teht2/teht2.csproj",
   "expectedPackageFiles": [
     "/home/latte/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
     "/home/latte/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.3/microsoft.aspnetcore.app.ref.3.1.3.nupkg.sha512",

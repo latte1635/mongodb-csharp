@@ -13,8 +13,8 @@ public class Player : IPlayer
     public static List<Player> InstantiatePlayers()
     {
         List<Player> result = new List<Player>();
-        for (int i = 0; i < 1000000; i++)
-            result.Add(new Player { Id = Guid.NewGuid(), Score = 0, Items = new List<Item>() });
+        for (int i = 0; i < 1000; i++)
+            result.Add(new Player { Id = Guid.NewGuid(), Score = new Random().Next(0, 1000000), Items = new List<Item>() });
 
         return result;
     }
