@@ -1,0 +1,13 @@
+/home/latte/code/csharp/mongo/teht2/bin/Debug/netcoreapp3.1/teht2
+/home/latte/code/csharp/mongo/teht2/bin/Debug/netcoreapp3.1/teht2.deps.json
+/home/latte/code/csharp/mongo/teht2/bin/Debug/netcoreapp3.1/teht2.runtimeconfig.json
+/home/latte/code/csharp/mongo/teht2/bin/Debug/netcoreapp3.1/teht2.runtimeconfig.dev.json
+/home/latte/code/csharp/mongo/teht2/bin/Debug/netcoreapp3.1/teht2.dll
+/home/latte/code/csharp/mongo/teht2/bin/Debug/netcoreapp3.1/teht2.pdb
+/home/latte/code/csharp/mongo/teht2/obj/Debug/netcoreapp3.1/teht2.csprojAssemblyReference.cache
+/home/latte/code/csharp/mongo/teht2/obj/Debug/netcoreapp3.1/teht2.AssemblyInfoInputs.cache
+/home/latte/code/csharp/mongo/teht2/obj/Debug/netcoreapp3.1/teht2.AssemblyInfo.cs
+/home/latte/code/csharp/mongo/teht2/obj/Debug/netcoreapp3.1/teht2.csproj.CoreCompileInputs.cache
+/home/latte/code/csharp/mongo/teht2/obj/Debug/netcoreapp3.1/teht2.dll
+/home/latte/code/csharp/mongo/teht2/obj/Debug/netcoreapp3.1/teht2.pdb
+/home/latte/code/csharp/mongo/teht2/obj/Debug/netcoreapp3.1/teht2.genruntimeconfig.cache
