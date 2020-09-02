@@ -11,22 +11,24 @@ namespace teht1
             string stationName = "Munkkiniemen aukio";
             int bikeCount = -1;
 
-            if(args.Length == 0)
+            if (args.Length == 0)
                 throw new ArgumentException("No argument provided");
 
             ICityBikeDataFetcher dataFetcher = null;
 
-            if(args[0] == "online")
+            if (args[0] == "online")
                 dataFetcher = new RealTimeCityBikeDataFetcher();
-            else if(args[0] == "offline")
+            else if (args[0] == "offline")
                 dataFetcher = new OfflineCityBikeDataFetcher();
-            else 
+            else
                 throw new ArgumentException("Argument must be 'online' or 'offline'");
 
-            try {
+            try
+            {
                 bikeCount = await dataFetcher.GetBikeCountInStation(stationName);
             }
-            catch {
+            catch
+            {
                 throw new NotFoundException("Not found: " + stationName);
             }
             Console.WriteLine(bikeCount);
