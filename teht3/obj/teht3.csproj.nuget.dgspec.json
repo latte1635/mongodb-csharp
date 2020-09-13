@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/latte/code/csharp/mongo/toGit/teht3/teht3.csproj": {}
+    "/home/latte/code/csharp/mongodb-csharp/teht3/teht3.csproj": {}
   },
   "projects": {
-    "/home/latte/code/csharp/mongo/toGit/teht3/teht3.csproj": {
+    "/home/latte/code/csharp/mongodb-csharp/teht3/teht3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/latte/code/csharp/mongo/toGit/teht3/teht3.csproj",
+        "projectUniqueName": "/home/latte/code/csharp/mongodb-csharp/teht3/teht3.csproj",
         "projectName": "teht3",
-        "projectPath": "/home/latte/code/csharp/mongo/toGit/teht3/teht3.csproj",
+        "projectPath": "/home/latte/code/csharp/mongodb-csharp/teht3/teht3.csproj",
         "packagesPath": "/home/latte/.nuget/packages/",
-        "outputPath": "/home/latte/code/csharp/mongo/toGit/teht3/obj/",
+        "outputPath": "/home/latte/code/csharp/mongodb-csharp/teht3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/latte/.nuget/NuGet/NuGet.Config"
@@ -45,20 +45,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.3, 3.1.3]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[3.1.7, 3.1.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -67,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -18,22 +18,61 @@ public class PlayerController : ControllerBase
         _fileRepository = fileRepository;
         _random = new Random();
     }
+    /*
+        [HttpGet]
+        public async Task<Player[]> Get()
+        {
+            var players = (await _fileRepository.GetAll()).ToList<Player>();
+            Player player = new Player()
+            {
+                Id = Guid.NewGuid(),
+                Name = "TestPlayer123",
+                Score = _random.Next(0, 255),
+                Level = _random.Next(0, 255),
+                IsBanned = false
+            };
 
-    [HttpGet]
-    public async Task<Player[]> Get()
+            //await _fileRepository.Delete(players.Last().Id);
+            Player p = await _fileRepository.Create(player);
+            Console.WriteLine(p);
+            return players.ToArray();
+        }
+    */
+    [HttpGet("/players/{id}")]
+    public Task<Player> Get(Guid id)
     {
-        var players = (await _fileRepository.GetAll()).ToList<Player>();
-        Player player = new Player()
+        return _fileRepository.Get(id); ;
+    }
+
+    [HttpGet("/players")]
+    public async Task<Player[]> GetAll()
+    {
+        return await _fileRepository.GetAll();
+    }
+
+    [HttpPost("/players/new")]
+    public async Task<Player> Create(NewPlayer player)
+    {
+        Player p = new Player()
         {
             Id = Guid.NewGuid(),
-            Name = "TestPlayer123",
+            Name = player.Name,
             Score = _random.Next(0, 255),
             Level = _random.Next(0, 255),
             IsBanned = false
         };
+        return await _fileRepository.Create(p);
+    }
 
-        await _fileRepository.Delete(players.Last().Id);
+    [HttpPost("/players/{id}/m")]
+    public async Task<Player> Modify(Guid id, ModifiedPlayer player)
+    {
+        return await _fileRepository.Modify(id, player);
+    }
 
-        return players.ToArray();
+    [HttpPost("/players/{id}/d")]
+    public async Task<Player> Delete(Guid id)
+    {
+        return await _fileRepository.Delete(id);
     }
 }

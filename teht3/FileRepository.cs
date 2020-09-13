@@ -108,44 +108,44 @@ public class FileRepository : IRepository
 
         Guid CurrentGuid = Guid.Empty;
 
-        string[] lines = File.ReadAllLines("game-dev.txt");
+        var lines = File.ReadAllLines("game-dev.txt");
         for (int i = 0; i < lines.Length; i++)
         {
             if (lines[i].StartsWith("["))
             {
                 CurrentGuid = Guid.Parse(lines[i].Replace("[", "").Replace("]", ""));
-
-                if (lines[i].Contains(id.ToString()))
-                {
-                    ret.Id = CurrentGuid;
-                }
-
-                if (CurrentGuid == id && lines[i].StartsWith("Name"))
-                {
-                    ret.Name = lines[i].Split("=")[1];
-                }
-
-                if (CurrentGuid == id && lines[i].StartsWith("Score"))
-                {
-                    lines[i] = "Score=" + player.Score.ToString();
-                    ret.Score = int.Parse(lines[i].Split("=")[1]);
-                }
-
-                if (CurrentGuid == id && lines[i].StartsWith("Level"))
-                {
-                    ret.Level = int.Parse(lines[i].Split("=")[1]);
-                }
-
-                if (CurrentGuid == id && lines[i].StartsWith("IsBanned"))
-                {
-                    ret.IsBanned = bool.Parse(lines[i].Split("=")[1]);
-                }
-
-                if (CurrentGuid == id && lines[i].StartsWith("CreationTime"))
-                {
-                    ret.CreationTime = DateTime.Parse(lines[i].Split("=")[1]);
-                }
             }
+            if (lines[i].Contains(id.ToString()))
+            {
+                ret.Id = CurrentGuid;
+            }
+
+            if (CurrentGuid.Equals(id) && lines[i].StartsWith("Name"))
+            {
+                ret.Name = lines[i].Split("=")[1];
+            }
+
+            if (CurrentGuid.Equals(id) && lines[i].StartsWith("Score"))
+            {
+                lines[i] = "Score=" + player.Score.ToString();
+                ret.Score = int.Parse(lines[i].Split("=")[1]);
+            }
+
+            if (CurrentGuid.Equals(id) && lines[i].StartsWith("Level"))
+            {
+                ret.Level = int.Parse(lines[i].Split("=")[1]);
+            }
+
+            if (CurrentGuid.Equals(id) && lines[i].StartsWith("IsBanned"))
+            {
+                ret.IsBanned = bool.Parse(lines[i].Split("=")[1]);
+            }
+
+            if (CurrentGuid.Equals(id) && lines[i].StartsWith("CreationTime"))
+            {
+                ret.CreationTime = DateTime.Parse(lines[i].Split("=")[1]);
+            }
+
         }
 
         File.WriteAllLines("game-dev.txt", lines);

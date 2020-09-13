@@ -16,3 +16,15 @@ Score=81
 Level=114
 IsBanned=False
 CreationTime=1/1/0001 12:00:00 AM
+[fa826e21-84a8-4395-b7c9-15b4f15e20bc]
+Name=asdasd
+Score=78
+Level=132
+IsBanned=False
+CreationTime=1/1/0001 12:00:00 AM
+[a58a3bc7-8669-4bba-bd20-a8ff8ce9e855]
+Name=blabla
+Score=42
+Level=98
+IsBanned=False
+CreationTime=1/1/0001 12:00:00 AM
