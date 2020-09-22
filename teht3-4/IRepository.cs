@@ -12,6 +12,6 @@ public interface IRepository
     Task<Item> CreateItem(Guid playerId, Item item);
     Task<Item> GetItem(Guid playerId, Guid itemId);
     Task<Item[]> GetAllItems(Guid playerId);
-    Task<Item> UpdateItem(Guid playerId, Guid itemId, ModifiedItem item);
+    Task<Item> UpdateItem(Guid playerId, Guid itemId, Item item);
     Task<Item> DeleteItem(Guid playerId, Item item);
 }

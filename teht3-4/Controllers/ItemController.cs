@@ -66,7 +66,11 @@ public class ItemController : ControllerBase
     [HttpPost("/players/{playerId}/items/{itemId}/m")]
     public async Task<Item> ModifyItem(Guid playerId, Guid itemId, ModifiedItem item)
     {
-        return await _mongoDBRepository.UpdateItem(playerId, itemId, item);
+        Item i = new Item
+        {
+            Value = item.Value
+        };
+        return await _mongoDBRepository.UpdateItem(playerId, itemId, i);
     }
 
     [HttpPost("/players/{playerId}/items/{itemId}/d")]

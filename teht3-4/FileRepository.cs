@@ -220,7 +220,7 @@ public class FileRepository : IRepository
         throw new NotImplementedException();
     }
 
-    public Task<Item> UpdateItem(Guid playerId, Guid itemId, ModifiedItem item)
+    public Task<Item> UpdateItem(Guid playerId, Guid itemId, Item item)
     {
         throw new NotImplementedException();
     }

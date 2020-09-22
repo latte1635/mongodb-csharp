@@ -26,6 +26,7 @@ public class MongoDBRepository : IRepository
         Player p = await _playerCollection.Find(filter).FirstAsync();
 
         p.Inventory.Add(item);
+        await _playerCollection.ReplaceOneAsync(filter, p);
         return item;
     }
 
@@ -78,9 +79,14 @@ public class MongoDBRepository : IRepository
         return _playerCollection.Find(filter).FirstAsync();
     }
 
-    public Task<Item> UpdateItem(Guid playerId, Guid itemId, ModifiedItem item)
+    public async Task<Item> UpdateItem(Guid playerId, Guid itemId, Item item)
     {
-        throw new NotImplementedException();
+        var filter = Builders<Player>.Filter.Eq(player => player.Id, playerId);
+        Player p = await _playerCollection.Find(filter).FirstAsync();
+
+        p.Inventory.Add(item);
+        await _playerCollection.ReplaceOneAsync(filter, p);
+        return item;
     }
 
     public async Task<Player> UpdatePlayer(Guid playerID, Player player)
