@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VboyYkJvN/87KkiRJRJRMoX1+qCaMr9my8QHXPkp7cWVWe2MqnOzRM2vW16VHyOPKTQHTCj4DmtNdC4S8s9rzg==",
+  "dgSpecHash": "z99Uy1lpr81iD5uvfyjPrhEDFeuv+HW0cQfjDmcai8C2lo805de3+gh/geSebKejTsEpKASeCox+GWtHUeZObw==",
   "success": true,
-  "projectFilePath": "/home/latte/code/csharp/mongo/toGit/teht3/teht3.csproj",
+  "projectFilePath": "/home/latte/code/csharp/mongo/toGit/teht3-4/teht3.csproj",
   "expectedPackageFiles": [
     "/home/latte/.nuget/packages/dnsclient/1.3.1/dnsclient.1.3.1.nupkg.sha512",
     "/home/latte/.nuget/packages/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg.sha512",

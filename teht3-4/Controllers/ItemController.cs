@@ -57,7 +57,8 @@ public class ItemController : ControllerBase
         {
             Id = Guid.NewGuid(),
             Name = item.Name,
-            Value = _random.Next(0, 255)
+            Value = _random.Next(0, 255),
+            CreationDate = DateTime.Now
         };
         return await _mongoDBRepository.CreateItem(playerId, i);
     }

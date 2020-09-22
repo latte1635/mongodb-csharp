@@ -61,7 +61,8 @@ public class PlayerController : ControllerBase
             Score = _random.Next(0, 255),
             Level = _random.Next(0, 255),
             IsBanned = false,
-            Inventory = new List<Item>()
+            Inventory = new List<Item>(),
+            CreationTime = DateTime.Now
         };
         return await _mongoDBRepository.CreatePlayer(p);
     }
