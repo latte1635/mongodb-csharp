@@ -7,12 +7,12 @@ using System;
 
 [ApiController]
 [Route("[controller]")]
-public class PlayerController : ControllerBase
+public class ItemController : ControllerBase
 {
-    private readonly ILogger<PlayerController> _logger;
+    private readonly ILogger<ItemController> _logger;
     private readonly MongoDBRepository _mongoDBRepository;
     private readonly Random _random;
-    public PlayerController(ILogger<PlayerController> logger, MongoDBRepository mongoDBRepository)
+    public ItemController(ILogger<ItemController> logger, MongoDBRepository mongoDBRepository)
     {
         _logger = logger;
         _mongoDBRepository = mongoDBRepository;
@@ -38,40 +38,35 @@ public class PlayerController : ControllerBase
             return players.ToArray();
         }
     */
-    [HttpGet("/players/{playerId}")]
-    public Task<Player> Get(Guid playerId)
+    [HttpGet("/players/{playerId}/items/{itemId}")]
+    public Task<Item> GetItem(Guid playerId, Guid itemId)
     {
-        return _mongoDBRepository.GetPlayer(playerId);
+        return _mongoDBRepository.GetItem(playerId, itemId);
     }
 
-    [HttpGet("/players")]
-    public async Task<Player[]> GetAll()
+    [HttpGet("/players/{playerId}/items")]
+    public async Task<Item[]> GetAllItems(Guid playerId)
     {
-        return await _mongoDBRepository.GetAllPlayers();
+        return await _mongoDBRepository.GetAllItems(playerId);
     }
 
-    [HttpPost("/players/n")]
-    public async Task<Player> Create(NewPlayer player)
+    [HttpPost("/players/{playerId}/items/n")]
+    public async Task<Item> CreateItem(Guid playerId, NewItem item)
     {
-        Player p = new Player()
+        Item i = new Item()
         {
-            Id = Guid.NewGuid(),
-            Name = player.Name,
-            Score = _random.Next(0, 255),
-            Level = _random.Next(0, 255),
-            IsBanned = false
         };
-        return await _mongoDBRepository.CreatePlayer(p);
+        return await _mongoDBRepository.CreateItem(playerId, i);
     }
 
-    [HttpPost("/players/{playerId}/m")]
-    public async Task<Player> Modify(Guid playerId, ModifiedPlayer player)
+    [HttpPost("/players/{playerId}/items/{itemId}/m")]
+    public async Task<Item> ModifyItem(Guid playerId, Guid itemId, ModifiedItem item)
     {
-        return await _mongoDBRepository.UpdatePlayer(playerId, player);
+        return await _mongoDBRepository.UpdateItem(playerId, itemId, item);
     }
 
-    [HttpPost("/players/{playerId}/d")]
-    public async Task<Player> Delete(Guid playerId)
+    [HttpPost("/players/{playerId}/items/{itemId}/d")]
+    public async Task<Player> DeleteItem(Guid playerId, Guid itemId)
     {
         return await _mongoDBRepository.DeletePlayer(playerId);
     }

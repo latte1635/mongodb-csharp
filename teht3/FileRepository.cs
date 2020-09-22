@@ -6,7 +6,7 @@ using System.Linq;
 
 public class FileRepository : IRepository
 {
-    public Task<Player> Get(Guid id)
+    public Task<Player> GetPlayer(Guid id)
     {
         Player player = new Player();
         bool GuidFound = false, NameEmpty = true, ScoreEmpty = true, LevelEmpty = true, IsBannedEmpty = true, CreationTimeEmpty = true;
@@ -56,7 +56,7 @@ public class FileRepository : IRepository
         return Task.Run(() => { return player; });
     }
 
-    public Task<Player[]> GetAll()
+    public Task<Player[]> GetAllPlayers()
     {
         List<Player> players = new List<Player>();
 
@@ -85,7 +85,7 @@ public class FileRepository : IRepository
         return Task.Run(() => { return players.ToArray(); });
     }
 
-    public Task<Player> Create(Player player)
+    public Task<Player> CreatePlayer(Player player)
     {
         if (!File.Exists("game-dev.txt")) return null;
 
@@ -102,7 +102,7 @@ public class FileRepository : IRepository
         return Task.Run(() => { return player; });
     }
 
-    public Task<Player> Modify(Guid id, ModifiedPlayer player)
+    public Task<Player> UpdatePlayer(Guid id, ModifiedPlayer player)
     {
         Player ret = new Player();
 
@@ -152,7 +152,7 @@ public class FileRepository : IRepository
         return Task.Run(() => { return ret; });
     }
 
-    public Task<Player> Delete(Guid id)
+    public Task<Player> DeletePlayer(Guid id)
     {
         Player ret = new Player();
 
@@ -203,5 +203,30 @@ public class FileRepository : IRepository
 
         File.WriteAllLines("game-dev.txt", lines);
         return Task.Run(() => { return ret; });
+    }
+
+    public Task<Item> CreateItem(Guid playerId, Item item)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<Item> GetItem(Guid playerId, Guid itemId)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<Item[]> GetAllItems(Guid playerId)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<Item> UpdateItem(Guid playerId, Guid itemId, ModifiedItem item)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<Item> DeleteItem(Guid playerId, Item item)
+    {
+        throw new NotImplementedException();
     }
 }

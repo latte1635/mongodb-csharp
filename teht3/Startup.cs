@@ -27,6 +27,7 @@ namespace teht3
         {
             services.AddControllers();
             services.AddSingleton<FileRepository>();
+            services.AddSingleton<MongoDBRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
