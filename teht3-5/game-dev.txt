@@ -1,0 +1,30 @@
+[f84132bd-a155-49d5-91d3-14120d01e9f9]
+Name=TestPlayer123
+Score=78
+Level=217
+IsBanned=False
+CreationTime=1/1/0001 12:00:00 AM
+[0d7bad91-9241-460d-9bc3-94fdba085ae6]
+Name=TestPlayer123
+Score=101
+Level=89
+IsBanned=False
+CreationTime=1/1/0001 12:00:00 AM
+[97991238-9d56-4cae-aed6-c6bca6d86fdc]
+Name=TestPlayer123
+Score=81
+Level=114
+IsBanned=False
+CreationTime=1/1/0001 12:00:00 AM
+[fa826e21-84a8-4395-b7c9-15b4f15e20bc]
+Name=asdasd
+Score=78
+Level=132
+IsBanned=False
+CreationTime=1/1/0001 12:00:00 AM
+[a58a3bc7-8669-4bba-bd20-a8ff8ce9e855]
+Name=blabla
+Score=42
+Level=98
+IsBanned=False
+CreationTime=1/1/0001 12:00:00 AM
